@@ -6,6 +6,8 @@
   --main-color: #6346ae;
   --btn-primary: linear-gradient(109deg, #6f4fbf 26.43%, #4b338a 77.39%);
   --btn-primary-hover: linear-gradient(109deg, #7f5fcf 26.43%, #5b4490 77.39%);
+  --green-color: #34b288;
+  --red-color: #eb4763;
 }
 
 @font-face {
@@ -246,7 +248,7 @@ nav ul li:not(.logo) a:hover {
 @media (max-width: 986px) {
   .hero-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 0;
   }
 
@@ -286,4 +288,71 @@ nav ul li:not(.logo) a:hover {
   .input-phone {
     padding: 1rem 1rem;
   }
+}
+
+.crypto-list {
+  padding-top: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 10rem;
+}
+
+.table-wrapper {
+  width: min(900px, 100% - 3rem);
+  margin-inline: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-container {
+  padding-top: 3rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.btn-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.btn-table .btn-buy {
+  font-family: "IRANSansX-Medium";
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn-table .btn-buy:hover {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.btn-table .btn-sell {
+  font-family: "IRANSansX-Medium";
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn-table .btn-sell:hover {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
 }

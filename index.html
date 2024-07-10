@@ -6,17 +6,15 @@
     <title>Exchange Landing</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body dir="rtl">
+    <!-- Navbar -->
+
     <nav class="main-navigation">
-      <div class="btn-nav">
-        <button id="signup-nav-btn">ثبت نام</button>
-        <button id="login-nav-btn">ورود</button>
-      </div>
       <ul class="navigation-list">
-        <li class="navigation-item"><a href="#about">درباره ما</a></li>
-        <li class="navigation-item"><a href="#convert">تبدیل ارز</a></li>
-        <li class="navigation-item"><a href="#list">لیست ارزها</a></li>
         <li class="navigation-item logo"><a href="#home">بیت ترید</a></li>
+        <li class="navigation-item"><a href="#list">لیست ارزها</a></li>
+        <li class="navigation-item"><a href="#convert">تبدیل ارز</a></li>
+        <li class="navigation-item"><a href="#about">درباره ما</a></li>
       </ul>
       <div class="hamburger-menu">
         <svg
@@ -33,11 +31,16 @@
           />
         </svg>
       </div>
+      <div class="btn-nav">
+        <button id="signup-nav-btn">ثبت نام</button>
+        <button id="login-nav-btn">ورود</button>
+      </div>
     </nav>
+
+    <!-- Hero Sections -->
 
     <div id="home" class="hero-section" data-v-ec150014>
       <div class="hero-container">
-        <img id="hero-image" src="./images/hero-section-banner.df43e59.webp" />
         <div class="hero-content">
           <div class="hero-text">
             <h1>بیت ترید، بزرگترین بازار فروش و خرید ارز دیجیتال</h1>
@@ -84,6 +87,81 @@
               </svg>
             </button>
           </div>
+        </div>
+        <img id="hero-image" src="./images/hero-section-banner.df43e59.webp" />
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="crypto-list" id="list">
+      <h1>لیست ارزها</h1>
+
+      <div class="table-wrapper">
+        <div class="table-container">
+          <table>
+            <tr class="table-title">
+              <th>نام رمز ارز</th>
+              <th>قیمت (دلار)</th>
+              <th>تغییرات (24h)</th>
+              <th>عملیات</th>
+            </tr>
+
+            <tr>
+              <td data-cell="name">بیت‌کوین</td>
+              <td data-cell="price">30125.5</td>
+              <td data-cell="change">2.3</td>
+              <td data-cell="operation">
+                <div class="btn-table">
+                  <button class="btn-buy">خرید</button
+                  ><button class="btn-sell">فروش</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="name">بیت‌کوین</td>
+              <td data-cell="price">30125.5</td>
+              <td data-cell="change">2.3</td>
+              <td data-cell="operation">
+                <div class="btn-table">
+                  <button class="btn-buy">خرید</button
+                  ><button class="btn-sell">فروش</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="name">بیت‌کوین</td>
+              <td data-cell="price">30125.5</td>
+              <td data-cell="change">2.3</td>
+              <td data-cell="operation">
+                <div class="btn-table">
+                  <button class="btn-buy">خرید</button
+                  ><button class="btn-sell">فروش</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="name">بیت‌کوین</td>
+              <td data-cell="price">30125.5</td>
+              <td data-cell="change">2.3</td>
+              <td data-cell="operation">
+                <div class="btn-table">
+                  <button class="btn-buy">خرید</button
+                  ><button class="btn-sell">فروش</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-cell="name">بیت‌کوین</td>
+              <td data-cell="price">30125.5</td>
+              <td data-cell="change">2.3</td>
+              <td data-cell="operation">
+                <div class="btn-table">
+                  <button class="btn-buy">خرید</button
+                  ><button class="btn-sell">فروش</button>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
