@@ -7,61 +7,83 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#about">درباره ما</a></li>
-        <li><a href="#convert">تبدیل ارز</a></li>
-        <li><a href="#list">لیست ارزها</a></li>
-        <li class="logo"><a href="#banner">بیت ترید</a></li>
+    <nav class="main-navigation">
+      <div class="btn-nav">
+        <button id="signup-nav-btn">ثبت نام</button>
+        <button id="login-nav-btn">ورود</button>
+      </div>
+      <ul class="navigation-list">
+        <li class="navigation-item"><a href="#about">درباره ما</a></li>
+        <li class="navigation-item"><a href="#convert">تبدیل ارز</a></li>
+        <li class="navigation-item"><a href="#list">لیست ارزها</a></li>
+        <li class="navigation-item logo"><a href="#home">بیت ترید</a></li>
       </ul>
+      <div class="hamburger-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </div>
     </nav>
 
-    <div id="banner" class="hero-section" data-v-ec150014>
-      <img src="./images/hero-section-banner.df43e59.webp" alt="Banner Image" />
-      <div class="hero-info">
-        <div class="hero-text">
-          <h1>بیت ترید، بزرگترین بازار فروش و خرید ارز دیجیتال</h1>
-          <p>مورد اعتمادترین صرافی رمزارز به انتخاب ۷ میلیون کاربر</p>
-        </div>
-        <div class="hero-buttons">
-          <div class="signup">
-            <button>ثبت نام</button>
-            <input
-              type="text"
-              placeholder="شماره موبایل خود را وارد کنید"
-              dir="rtl"
-            />
+    <div id="home" class="hero-section" data-v-ec150014>
+      <div class="hero-container">
+        <img id="hero-image" src="./images/hero-section-banner.df43e59.webp" />
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>بیت ترید، بزرگترین بازار فروش و خرید ارز دیجیتال</h1>
+            <p>مورد اعتمادترین صرافی رمزارز به انتخاب ۷ میلیون کاربر</p>
           </div>
+          <div class="hero-actions">
+            <div class="action-signup">
+              <button class="btn-signup">ثبت نام</button>
+              <input
+                type="text"
+                placeholder="شماره موبایل خود را وارد کنید"
+                dir="rtl"
+                class="input-phone"
+              />
+            </div>
 
-          <button class="signup-with-google">
-            ثبت نام سریع با گوگل
-            <svg
-              data-v-2444a3b5=""
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 16 16"
-              aria-labelledby="googleIcon"
-              class="google-icon-style"
-            >
-              <path
-                d="M15.8299 8.17984C15.8299 7.65317 15.7833 7.15317 15.7033 6.6665H8.16992V9.67317H12.4833C12.2899 10.6598 11.7233 11.4932 10.8833 12.0598V14.0598H13.4566C14.9633 12.6665 15.8299 10.6132 15.8299 8.17984Z"
-                fill="#4285F4"
-              ></path>
-              <path
-                d="M8.17027 16.0002C10.3303 16.0002 12.1369 15.2802 13.4569 14.0602L10.8836 12.0602C10.1636 12.5402 9.25027 12.8335 8.17027 12.8335C6.08361 12.8335 4.31694 11.4269 3.68361 9.52686H1.03027V11.5869C2.34361 14.2002 5.04361 16.0002 8.17027 16.0002Z"
-                fill="#34A853"
-              ></path>
-              <path
-                d="M3.68326 9.52691C3.51659 9.04691 3.42992 8.53357 3.42992 8.00024C3.42992 7.46691 3.52326 6.95357 3.68326 6.47357V4.41357H1.02992C0.483255 5.49357 0.169922 6.70691 0.169922 8.00024C0.169922 9.29357 0.483255 10.5069 1.02992 11.5869L3.68326 9.52691Z"
-                fill="#FBBC05"
-              ></path>
-              <path
-                d="M8.17027 3.16667C9.35027 3.16667 10.4036 3.57334 11.2369 4.36667L13.5169 2.08667C12.1369 0.793334 10.3303 0 8.17027 0C5.04361 0 2.34361 1.8 1.03027 4.41334L3.68361 6.47334C4.31694 4.57334 6.08361 3.16667 8.17027 3.16667Z"
-                fill="#EA4335"
-              ></path>
-            </svg>
-          </button>
+            <button class="btn-signup-google">
+              ثبت نام سریع با گوگل
+              <svg
+                data-v-2444a3b5=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 16 16"
+                aria-labelledby="googleIcon"
+                class="google-icon-style"
+              >
+                <path
+                  d="M15.8299 8.17984C15.8299 7.65317 15.7833 7.15317 15.7033 6.6665H8.16992V9.67317H12.4833C12.2899 10.6598 11.7233 11.4932 10.8833 12.0598V14.0598H13.4566C14.9633 12.6665 15.8299 10.6132 15.8299 8.17984Z"
+                  fill="#4285F4"
+                ></path>
+                <path
+                  d="M8.17027 16.0002C10.3303 16.0002 12.1369 15.2802 13.4569 14.0602L10.8836 12.0602C10.1636 12.5402 9.25027 12.8335 8.17027 12.8335C6.08361 12.8335 4.31694 11.4269 3.68361 9.52686H1.03027V11.5869C2.34361 14.2002 5.04361 16.0002 8.17027 16.0002Z"
+                  fill="#34A853"
+                ></path>
+                <path
+                  d="M3.68326 9.52691C3.51659 9.04691 3.42992 8.53357 3.42992 8.00024C3.42992 7.46691 3.52326 6.95357 3.68326 6.47357V4.41357H1.02992C0.483255 5.49357 0.169922 6.70691 0.169922 8.00024C0.169922 9.29357 0.483255 10.5069 1.02992 11.5869L3.68326 9.52691Z"
+                  fill="#FBBC05"
+                ></path>
+                <path
+                  d="M8.17027 3.16667C9.35027 3.16667 10.4036 3.57334 11.2369 4.36667L13.5169 2.08667C12.1369 0.793334 10.3303 0 8.17027 0C5.04361 0 2.34361 1.8 1.03027 4.41334L3.68361 6.47334C4.31694 4.57334 6.08361 3.16667 8.17027 3.16667Z"
+                  fill="#EA4335"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
