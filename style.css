@@ -3,17 +3,23 @@
 }
 
 @font-face {
-  font-family: "IRANSansX";
+  font-family: "IRANSansX-Medium";
   src: url("./fonts/IRANSansX-5-Medium.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "IRANSansX-Bold";
+  src: url("./fonts/IRANSansX-7-Bold.woff2") format("woff2");
+}
+
 body {
-  font-family: "IRANSansX", sans-serif;
+  font-family: "IRANSansX-Medium", sans-serif;
   padding-top: 60px;
 }
 
 nav {
-  background-color: #6a5aae;
+  backdrop-filter: blur(40px);
+  background-color: hsla(0, 0%, 100%, 0.48);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -33,29 +39,130 @@ nav li {
 }
 
 nav ul li.logo a {
-  font-weight: bold;
-  font-size: 25px;
+  font-family: "IRANSansX-Bold";
+  font-size: 1.75rem;
+  font-weight: bolder;
   text-decoration: none;
-  color: #ffff;
+  color: #6a5aae;
   padding: 0;
-  padding-left: 30px;
-  padding-right: 20px;
+  padding-left: 2rem;
+  padding-right: 3rem;
 }
 
 nav ul li:not(.logo) a {
-  /* Your existing styles for nav links */
   display: block;
-  color: white;
+  color: rgb(47, 47, 47);
   text-align: center;
   padding: 30px 20px;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 nav ul li:not(.logo) a:hover {
-  color: #e7e6e6; /* This ensures only links outside .logo change color on hover */
+  color: #6a5aae; /* This ensures only links outside .logo change color on hover */
 }
 
 #banner {
   text-align: center;
   padding: 50px 0;
+}
+
+.hero-section {
+  background-color: radial-gradient(circle at 50% 80%, #f5f8ff, #c6cafe);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.hero-section[data-v-ec150014] {
+  background: radial-gradient(circle at 50% 80%, #f5f8ff, #c6cafe);
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: right;
+}
+
+.hero-info h1 {
+  width: 32rem;
+  font-family: "IRANSansX-Bold";
+  font-size: 2.6rem;
+  display: flex;
+  line-height: 1.2;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.hero-text p {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.hero-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.hero-buttons .signup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hero-buttons .signup button {
+  width: 11rem;
+  background: linear-gradient(109deg, #6f4fbf 26.43%, #4b338a 77.39%);
+  color: white;
+  font-family: "IRANSansX-Medium", sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.hero-buttons .signup button:hover {
+  background: linear-gradient(109deg, #7f5fcf 26.43%, #5b4490 77.39%);
+}
+
+.hero-buttons input {
+  width: 14rem;
+  height: 3.2rem;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 8px;
+  font-weight: 550;
+  font-family: "IRANSansX-Medium", sans-serif;
+  font-size: 0.95rem;
+}
+
+.hero-buttons input:focus {
+  border: none;
+  outline: none;
+}
+
+.signup-with-google {
+  width: 27.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  height: 3.2rem;
+  cursor: pointer;
+  font-family: "IRANSansX-Medium", sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
 }
