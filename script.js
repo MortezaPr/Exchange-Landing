@@ -53,11 +53,25 @@ document.querySelector(".menu").addEventListener("click", function () {
   document.querySelector(".sidebar-open").style.display = "block";
 });
 
-document.getElementById('close-sidebar').addEventListener('click', function() {
-  const sidebar = document.querySelector('.sidebar-open');
-  sidebar.classList.add('sidebar-close');
+document.getElementById("close-sidebar").addEventListener("click", function () {
+  const sidebar = document.querySelector(".sidebar-open");
+  sidebar.classList.add("sidebar-close");
   setTimeout(() => {
-    sidebar.style.display = 'none';
-    sidebar.classList.remove('sidebar-close');
+    sidebar.style.display = "none";
+    sidebar.classList.remove("sidebar-close");
   }, 500);
+});
+
+const desktopBreakpoint = 850;
+
+// Function to close the sidebar
+function closeSidebar() {
+  const sidebar = document.querySelector(".sidebar-open");
+  sidebar.style.display = "none";
+}
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= desktopBreakpoint) {
+    closeSidebar();
+  }
 });
