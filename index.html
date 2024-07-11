@@ -10,27 +10,32 @@
     <!-- Navbar -->
 
     <nav class="main-navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item logo"><a href="#home">بیت ترید</a></li>
-        <li class="navigation-item"><a href="#list">لیست ارزها</a></li>
-        <li class="navigation-item"><a href="#convert">تبدیل ارز</a></li>
-        <li class="navigation-item"><a href="#about">درباره ما</a></li>
-      </ul>
-      <div class="hamburger-menu">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-          />
-        </svg>
+      <div class="navigation-links">
+        <div class="hamburger-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </div>
+        <li class="logo">
+          <a href="#home">بیت ترید</a>
+        </li>
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="#list">لیست ارزها</a></li>
+          <li class="navigation-item"><a href="#convert">تبدیل ارز</a></li>
+          <li class="navigation-item"><a href="#about">درباره ما</a></li>
+        </ul>
       </div>
+
       <div class="btn-nav">
         <button id="login-nav-btn">ورود</button>
         <button id="signup-nav-btn">ثبت نام</button>
@@ -48,13 +53,13 @@
           </div>
           <div class="hero-actions">
             <div class="action-signup">
-              <button class="btn-signup">ثبت نام</button>
               <input
                 type="text"
                 placeholder="شماره موبایل خود را وارد کنید"
                 dir="rtl"
                 class="input-phone"
               />
+              <button class="btn-signup">ثبت نام</button>
             </div>
 
             <button class="btn-signup-google">
@@ -105,65 +110,10 @@
               <th>تغییرات (24h)</th>
               <th>عملیات</th>
             </tr>
-
-            <tr>
-              <td data-cell="name">بیت‌کوین</td>
-              <td data-cell="price">30125.5</td>
-              <td data-cell="change">2.3</td>
-              <td data-cell="operation">
-                <div class="btn-table">
-                  <button class="btn-buy">خرید</button
-                  ><button class="btn-sell">فروش</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-cell="name">بیت‌کوین</td>
-              <td data-cell="price">30125.5</td>
-              <td data-cell="change">2.3</td>
-              <td data-cell="operation">
-                <div class="btn-table">
-                  <button class="btn-buy">خرید</button
-                  ><button class="btn-sell">فروش</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-cell="name">بیت‌کوین</td>
-              <td data-cell="price">30125.5</td>
-              <td data-cell="change">2.3</td>
-              <td data-cell="operation">
-                <div class="btn-table">
-                  <button class="btn-buy">خرید</button
-                  ><button class="btn-sell">فروش</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-cell="name">بیت‌کوین</td>
-              <td data-cell="price">30125.5</td>
-              <td data-cell="change">2.3</td>
-              <td data-cell="operation">
-                <div class="btn-table">
-                  <button class="btn-buy">خرید</button
-                  ><button class="btn-sell">فروش</button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td data-cell="name">بیت‌کوین</td>
-              <td data-cell="price">30125.5</td>
-              <td data-cell="change">2.3</td>
-              <td data-cell="operation">
-                <div class="btn-table">
-                  <button class="btn-buy">خرید</button
-                  ><button class="btn-sell">فروش</button>
-                </div>
-              </td>
-            </tr>
           </table>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

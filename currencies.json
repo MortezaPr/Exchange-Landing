@@ -1,137 +1,152 @@
 [
   {
     "id": "bitcoin",
-    "name_en": "Bitcoin",
+    "name_en": "BTC",
     "name_fa": "بیت‌کوین",
     "price_usd": 30125.5,
     "change_24h": 2.3,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/BTC.svg"
   },
   {
     "id": "ethereum",
-    "name_en": "Ethereum",
+    "name_en": "ETH",
     "name_fa": "اتریوم",
     "price_usd": 1850.75,
     "change_24h": -1.2,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/ETH.svg"
   },
   {
     "id": "tether",
-    "name_en": "Tether",
+    "name_en": "USDT",
     "name_fa": "تتر",
     "price_usd": 1.0,
     "change_24h": 0.0,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/USDT.svg"
   },
   {
     "id": "binancecoin",
-    "name_en": "Binance Coin",
+    "name_en": "BNB",
     "name_fa": "بایننس کوین",
     "price_usd": 310.1,
     "change_24h": 0.5,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/BNB.svg"
   },
   {
     "id": "ripple",
-    "name_en": "Ripple",
+    "name_en": "XRP",
     "name_fa": "ریپل",
     "price_usd": 0.73,
     "change_24h": -0.8,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/XRP.svg"
   },
   {
     "id": "cardano",
-    "name_en": "Cardano",
+    "name_en": "ADA",
     "name_fa": "کاردانو",
     "price_usd": 1.2,
     "change_24h": 3.1,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/ADA.svg"
   },
   {
     "id": "dogecoin",
-    "name_en": "Dogecoin",
+    "name_en": "DOGE",
     "name_fa": "دوج کوین",
     "price_usd": 0.25,
     "change_24h": -0.4,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/DOGE.svg"
   },
   {
     "id": "polkadot",
-    "name_en": "Polkadot",
+    "name_en": "DOT",
     "name_fa": "پولکادات",
     "price_usd": 25.5,
     "change_24h": 1.7,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/DOT.svg"
   },
   {
     "id": "uniswap",
-    "name_en": "Uniswap",
+    "name_en": "UNI",
     "name_fa": "یونی سواپ",
     "price_usd": 23.45,
     "change_24h": 0.9,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/UNI.svg"
   },
   {
     "id": "litecoin",
-    "name_en": "Litecoin",
+    "name_en": "LTC",
     "name_fa": "لایت‌کوین",
     "price_usd": 145.5,
     "change_24h": 2.1,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/LTC.svg"
   },
   {
     "id": "chainlink",
-    "name_en": "Chainlink",
+    "name_en": "LINK",
     "name_fa": "چین لینک",
     "price_usd": 18.75,
     "change_24h": -1.5,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/LINK.svg"
   },
   {
     "id": "stellar",
-    "name_en": "Stellar",
+    "name_en": "Stellar - XLM",
     "name_fa": "استلار",
     "price_usd": 0.29,
     "change_24h": 0.3,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/XLM.svg"
   },
   {
     "id": "vechain",
-    "name_en": "VeChain",
+    "name_en": "VeChain - VET",
     "name_fa": "وی‌چین",
     "price_usd": 0.12,
     "change_24h": 1.8,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/VET.svg"
   },
   {
     "id": "solana",
-    "name_en": "Solana",
+    "name_en": "SOL",
     "name_fa": "سولانا",
     "price_usd": 33.25,
     "change_24h": 4.5,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/SOL.svg"
   },
   {
     "id": "tron",
-    "name_en": "Tron",
+    "name_en": "Tron - TRX",
     "name_fa": "ترون",
     "price_usd": 0.09,
     "change_24h": 1.0,
     "buy_option": true,
-    "sell_option": true
+    "sell_option": true,
+    "image": "https://file.sarmayex.com/images/svg/TRX.svg"
   }
 ]
