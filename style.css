@@ -46,9 +46,71 @@ body {
   justify-content: space-between;
 }
 
-.hamburger-menu {
+.menu {
   cursor: pointer;
   display: none;
+}
+
+@keyframes slideInFromRight {
+  from {
+    right: -50%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.sidebar-open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10001;
+  height: 100vh;
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+  animation: slideInFromRight 0.5s forwards;
+}
+
+@keyframes slideOutToRight {
+  from {
+    right: 0;
+  }
+  to {
+    right: -50%;
+  }
+}
+
+.sidebar-close {
+  animation: slideOutToRight 0.5s forwards;
+}
+
+#close-sidebar {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+.sidebar-navigation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 3rem;
+  list-style-type: none;
+}
+
+.sidebar-navigation-list a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.sidebar-navigation-list a:hover {
+  color: var(--main-color);
 }
 
 .btn-nav {
@@ -239,7 +301,7 @@ nav ul li:not(.logo) a:hover {
     padding-right: 2rem;
   }
 
-  .hamburger-menu {
+  .menu {
     display: block;
     display: flex;
     justify-content: center;

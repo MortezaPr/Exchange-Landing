@@ -48,3 +48,16 @@ fetch("currencies.json")
     });
   })
   .catch((error) => console.error("Error loading the JSON data:", error));
+
+document.querySelector(".menu").addEventListener("click", function () {
+  document.querySelector(".sidebar-open").style.display = "block";
+});
+
+document.getElementById('close-sidebar').addEventListener('click', function() {
+  const sidebar = document.querySelector('.sidebar-open');
+  sidebar.classList.add('sidebar-close');
+  setTimeout(() => {
+    sidebar.style.display = 'none';
+    sidebar.classList.remove('sidebar-close');
+  }, 500);
+});
