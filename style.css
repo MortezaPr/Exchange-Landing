@@ -414,3 +414,20 @@ tr:nth-child(odd) {
 #loadMore:hover {
   background: var(--btn-primary-hover);
 }
+
+.ascending {
+  color: var(--green-color);
+  font-family: "IRANSansX-Bold";
+}
+
+.descending {
+  color: var(--red-color);
+  font-family: "IRANSansX-Bold";
+}
+
+.currency-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}

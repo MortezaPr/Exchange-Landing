@@ -14,6 +14,14 @@ function appendRow(item, tableBody) {
   const changeCell = row.insertCell();
   changeCell.textContent = item.change_24h;
   changeCell.setAttribute("dir", "ltr");
+  if (item.change_24h > 0) {
+    changeCell.classList.add("ascending");
+    changeCell.innerHTML = `<div class="currency-change">${item.change_24h}<img width="20" height="20" src="https://file.sarmayex.com/static/images/new-Landing/trend-down-2.svg"/></div>`;
+  } else if (item.change_24h < 0) {
+    changeCell.classList.add("descending");
+    changeCell.innerHTML = `<div class="currency-change">${item.change_24h}<img width="20" height="20" src="https://file.sarmayex.com/static/images/new-Landing/trend-down-3.svg"/></div>`;
+  }
+
   changeCell.setAttribute("data-cell", "change");
 
   const operationCell = row.insertCell();
