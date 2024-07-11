@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-color: #6346ae;
   --btn-primary: linear-gradient(109deg, #6f4fbf 26.43%, #4b338a 77.39%);
