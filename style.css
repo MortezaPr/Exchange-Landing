@@ -219,7 +219,12 @@ body {
 
 @media (max-width: 580px) {
   .main-navigation .logo a {
-    font-size: 1.85rem;
+    font-size: 1.9rem;
+  }
+
+  #signup-nav-btn,
+  #login-nav-btn {
+    padding: 0.5rem 0.8rem;
   }
 }
 
@@ -413,9 +418,12 @@ nav ul li:not(.logo) a:hover {
   }
 }
 
+.crypto-list h1 {
+  padding-right: 3rem;
+}
+
 .crypto-list {
   padding-top: 3rem;
-  padding-right: 3rem;
 }
 
 .table-wrapper {
@@ -543,13 +551,21 @@ tr:nth-child(odd) {
     display: flex;
     flex-direction: column;
   }
+
+  .btn-table {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.convert-box h1 {
+  padding-right: 3rem;
 }
 
 .convert-box {
   margin-top: 3rem;
-  padding-right: 3rem;
   padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
   background-color: #f2f3f5;
 }
 
@@ -604,11 +620,12 @@ tr:nth-child(odd) {
 
 .box-item {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .box-item select {
-  width: 10rem;
+  width: 7rem;
   height: 2.5rem;
   margin-top: 2.5rem;
   margin-left: 1rem;
@@ -659,4 +676,65 @@ tr:nth-child(odd) {
   color: black !important;
   transition: color 0.3s ease, transform 0.3s ease;
   transform: scale(1.1);
+}
+
+.currency-dropdown {
+  direction: ltr;
+}
+
+.box-item-detail div input {
+  border: none;
+  border-radius: 8px;
+  height: 2.5rem;
+  width: 8rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  font-family: "IRANSansX-Medium";
+}
+
+.box-item-detail div input:focus {
+  border: none;
+  outline: none;
+}
+
+.footer {
+  background: var(--btn-primary);
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-right: 3rem;
+  color: white;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer .logo {
+  font-family: "Hamoon";
+  font-size: 3rem;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 3rem;
+}
+
+.social-media img {
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .footer-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .footer {
+    padding-top: 1.5rem;
+  }
 }

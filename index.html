@@ -76,7 +76,7 @@
                 type="text"
                 placeholder="شماره موبایل خود را وارد کنید"
                 dir="rtl"
-                class="input-phone"
+                class="input-phone farsiNumberInput"
               />
               <button class="btn-signup">ثبت نام</button>
             </div>
@@ -148,9 +148,14 @@
           <div class="box-item" id="pay">
             <div class="box-item-detail">
               <div class="box-title">پرداختی من:</div>
-              <div class="number">0</div>
+              <div>
+                <input type="text" class="farsiNumberInput" placeholder="۰" />
+              </div>
             </div>
-            <select id="currency-dropdown-pay" class="currency-dropdown"></select>
+            <select
+              id="currency-dropdown-pay"
+              class="currency-dropdown"
+            ></select>
           </div>
           <div class="box-item" id="receive">
             <div class="box-item-detail">
@@ -158,7 +163,10 @@
               <div class="number">0</div>
             </div>
 
-            <select id="currency-dropdown-receive" class="currency-dropdown"></select>
+            <select
+              id="currency-dropdown-receive"
+              class="currency-dropdown"
+            ></select>
           </div>
           <button id="box-button">
             <div
@@ -186,7 +194,59 @@
       </div>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer" id="about">
+      <div class="footer-header">
+        <h2>
+          <span class="logo">بیت ترید</span>
+        </h2>
+        <p style="font-size: 1.5rem">
+          اولین سامانه خرید و فروش ارز دیجیتال در ایران
+        </p>
+      </div>
+
+      <p style="line-height: 2; padding: 2rem 2rem;">
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+        از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+        سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+        متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+        نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+        خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+        داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+        رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+        پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+      </p>
+
+      <div class="social-media" dir="ltr">
+        <img
+          src="https://nobitex.ir/_nuxt/img/youtube-logo-3.c6e2a44.svg"
+          alt="YouTube"
+        />
+        <img
+          src="https://nobitex.ir/_nuxt/img/instagram-logo-3.91e8e75.svg"
+          alt="Instagram"
+        />
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyNiAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zLjAzMTM0IDI2SDIyLjk2OUMyNC42NDMyIDI2IDI2LjAwMDMgMjQuNjQyOSAyNiAyMi45Njg0VjMuMDMxMzFDMjYgMS4zNTcxIDI0LjY0MjkgMCAyMi45Njg3IDBIMy4wMzEzNEMxLjM1NzEyIDAgMCAxLjM1NzEgMCAzLjAzMTMxVjIyLjk2ODdDMCAyNC42NDI5IDEuMzU3MTIgMjYgMy4wMzEzNCAyNlpNMTAuOTYwNCAxMy44NDQxTDMuODk2NDEgNC44MTQ4MUg5LjM0MDc4TDEzLjk3MTggMTAuNzM0MUwxOS43MDMzIDQuODE0ODFIMjEuMzAzMkwxNC42ODY2IDExLjY0ODFMMjIuMTQ4MiAyMS4xODUySDE2LjcwMzhMMTEuNjc1NSAxNC43NTc4TDUuNDUxODYgMjEuMTg1MkgzLjg1MTg5TDEwLjk2MDQgMTMuODQ0MVpNOC43NTAzNSA1Ljk0MTYxSDYuMjQ5MjNMMTcuMjkzOSAyMC4wNTg3SDE5Ljc5NTFMOC43NTAzNSA1Ljk0MTYxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
+          alt="X"
+        />
+        <img
+          src="https://nobitex.ir/_nuxt/img/linkedin-logo-3.a2ac9f5.svg"
+          alt="LinkedIn"
+        />
+      </div>
+
+      <p
+        style="
+          display: flex;
+          justify-content: center;
+          font-size: 0.9rem;
+          padding-top: 10rem;
+        "
+      >
+        © ۱۴۰۳ - کلیه حقوق مادی و معنوی این سایت متعلق به بیت ترید است.
+      </p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

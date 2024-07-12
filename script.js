@@ -134,8 +134,9 @@ fetch("currencies.json")
 
       currencies.forEach((currency) => {
         const option = document.createElement("option");
+        option.classList.add("dropdown-options");
         option.value = currency.name_en;
-        option.textContent = currency.name_en;
+        option.textContent = ` ${currency.name_en}`;
 
         dropdown.appendChild(option);
       });
@@ -187,5 +188,18 @@ document.addEventListener("DOMContentLoaded", function () {
         convertElement.scrollIntoView({ behavior: "smooth" });
       }
     }
+  });
+});
+
+document.querySelectorAll(".farsiNumberInput").forEach(function (input) {
+  input.addEventListener("input", function (e) {
+    const latinNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    const farsiNumbers = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+
+    let value = e.target.value;
+    for (let i = 0; i < latinNumbers.length; i++) {
+      value = value.replace(new RegExp(latinNumbers[i], "g"), farsiNumbers[i]);
+    }
+    e.target.value = value;
   });
 });
